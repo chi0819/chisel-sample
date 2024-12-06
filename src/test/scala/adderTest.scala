@@ -1,12 +1,12 @@
-/* src/test/scala/myadderTest.scala */
+/* src/test/scala/adderTest.scala */
 import chisel3._
 import chisel3.simulator.EphemeralSimulator._
 import org.scalatest.freespec.AnyFreeSpec
 import org.scalatest.matchers.must.Matchers
 
-class myadderTest extends AnyFreeSpec with Matchers {
+class adderTest extends AnyFreeSpec with Matchers {
     "Add two 7 bits number correctly" in {
-        simulate(new myadder) { c =>
+        simulate(new adder) { c =>
             for(i <- 0 until 20 ) {
                 val in1 = i
                 val in2 = i + 1
